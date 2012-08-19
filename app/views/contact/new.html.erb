@@ -1,14 +1,24 @@
 <%= form_for @message, :url => contact_path do |form| %>
   <fieldset class="fields">
-
-    
-    <div class="field">
-      <%= form.label :email %>
-      <%= form.text_field :email %>
+    <div class='span2'>
+      <p>&nbsp;</p>
     </div>
-
+    <div class='span7'>
+      <div class='well'>
+        <br />
+        <h1 align='center'>Chan<br /><small>Exercises to make you feel good</small></h1><br />
+        <br /> 
+        <div class='padding-left: 35px'>
+          <h4>Hello! You've caught us before we're ready.</h4>
+          <br />
+          <h5>We're working hard to put the finishing touches onto Chan. Things are going well and we'll be ready to begin putting a smile on your face soon. If you'd like us to send you a reminder when we're ready, just enter your email address below.</h5><br />
+          <br />
+          <div class="field" align="center">
+            <%= form.text_field :email %> <%= form.submit "Remind Me", :class => 'btn btn-large btn-success' %>
+          </div>
+      </div>
+    </div>      
+          
   
-  <fieldset class="actions">
-    <%= form.submit "Send" %>
-  </fieldset>
+  
 <% end %>
