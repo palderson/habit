@@ -5,7 +5,7 @@ class NotificationsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject => "[GetChan Message] #{message.email}")
+    mail(:subject => "[Habit Message] #{message.email}")
   end
 
 end
