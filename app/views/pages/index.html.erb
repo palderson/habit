@@ -1,27 +1,14 @@
-<div class='span2'>
-  <p>&nbsp;</p>
+<div class='page-header'>
+  <h1>Habit <small>Form habits that improve your life</small></h1>
 </div>  
-<div class='span7'>
-  <div class='well'> 
-    <br />
-    <h1 align='center'>Habit<br /><small>Form habits that improve your life</small></h1><br />
-    <br />
-    <div class='padding-left: 35px'>
-      <h3>1. Choose your habit</h3><br />
-      <h5>Eg: Daily Exercise, Being Punctual, Eating Breakfast</h5><br />
-      <br />
-      <h3>2. Commit to establishing the habit</h3><br />
-      <h5>Publicly declare your dedication to forming the habit</h5><br />  
-      <br />
-      <h3>3. Form the habit</h3><br />
-      <h5>Follow the activities and your new habit will arrive</h5><br />
-      <br />
-    </div>  
-    <div align='center'>
-      <%= button_to 'Pricing & Sign Up', contact_path, :class => 'btn btn-large btn-success span3', :method => :get %>
+  <div class='hero-unit'>
+    <p>&nbsp;</p>
+  </div>  
+
+      <%= render :partial => 'steps' %>
     </div>
-  </div>
-</div>    
-<div class='span2'>
-  <p>&nbsp;</p>
-</div>  
+  </div>  
+  
+  <%= render :partial => 'detail' %>
+    
+    
