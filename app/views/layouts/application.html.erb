@@ -6,8 +6,11 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Quando|Capriola' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:100|Fanwood+Text' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic|Raleway:100' rel='stylesheet' type='text/css'>
   <script type="text/javascript">
+    $(function(){
+      $('.carousel').carousel();
+    });
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34209216-1']);
@@ -26,8 +29,12 @@
     <div class='row'>
       <div class='span12'>
         <%= yield %>
-      </div>
-    </div>    
+        <hr>
+      <footer 
+          <p>&copy; Habit<a href="/contact" style="float:right">&nbsp;Contact</a></p>
+      </footer>
+      <br />  
+    </div>
   </div>      
 </body>
 </html>

@@ -1,21 +1,17 @@
 <%= form_for @message, :url => contact_path do |form| %>
   <fieldset class="fields">
-    <div class='span2'>
-      <p>&nbsp;</p>
+    <div class='page-header'>
+      <h1>Habit <small>Form habits that improve your life</small></h1>
     </div>  
-    <div class='span7'>
-      <div class='well'> 
-        <br />
-        <h1 align='center'>Habit<br /><small>Form habits that improve your life</small></h1><br />
-        <br />
-        <div class='padding-left: 35px'>
-          <h4>You've caught us before we're ready.</h4>
-          <br />
-          <h5>We're working hard to put the finishing touches on Habit. Things are going well and we'll have you forming life changing habits in no time. If you'd like us to send you a reminder when we're ready, just enter your email address below.</h5><br />
-          <br />
-          <div class="field" align="center">
-            <%= form.text_field :email, :style => 'margin-top: 8px' %> <%= form.submit "Remind Me", :class => 'btn btn-success' %>
-          </div>
+      <br /> 
+    <div align='center'>
+      <h2>Hello! You've caught us before we're ready.</h2>
+      <br />
+      <h5>We're working hard to put the finishing touches on Habit. <br />Things are going well and we'll have you forming life changing habits in no time.<br />If you'd like us to send you a reminder when we're ready, just enter your email address below.</h5><br />
+      <br />
+      <div class="field" align="center">
+        <%= form.text_field :email, :class => 'span4', :id => 'textboxid', :style => 'margin-top: 8px' %> <%= form.submit "Remind Me", :class => 'btn btn-large btn-success' %>
+      </div>
       </div>
     </div>      
           
