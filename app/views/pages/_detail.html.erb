@@ -4,15 +4,19 @@
   <h2>Choose the habits you want</h2>
   <br />
   <blockquote>
-    <p>Imagine if exercising each day was effortless. If you could spring from your bed at 6am without hesitation. Doing so requires a habit.<br />Just think what you could achieve.</p>
+    <p>Habit specializes in breaking down a desired habit into micro steps, which anyone can achieve. The first step is simply to choose your desired  habit .</p>
   </blockquote>
   <br />
-  <%= button_to 'Choose Habits', contact_path, :class => 'btn btn-large btn-success', :style => 'margin-padding:20px', :method => :get %>
+  <br />
+  <div align='center'>
+    <%= image_tag("arrow_right.png") %>  
+  </div>  
 </div> 
+<br />
 <div class='span6'>
   <div class='well'>
     <div id='web'>
-      <%= image_tag("app_shot.png") %><br />
+      <%= image_tag("notepad.png") %><br />
     </div>  
   </div>  
 </div>
@@ -33,10 +37,12 @@
         <h2>Exercises develop the habit</h2>
       <br />
       <blockquote>
-        <p>Habits develop through repetitive actions over a period of time. Some actions are very small and often not directly related to the habit you wish to form. We provide you with these actions, via SMS, to incorporate into your everyday activities.</p>
+        <p>We then take those micro steps and give them an anchor, which means placing them next to something you already do each day such as brushing your teeth or coming home from work.</p>
       </blockquote>  
       <br />
-      <%= button_to 'Add Number', contact_path, :class => 'btn btn-large btn-success', :style => 'margin-padding:20px', :method => :get %>
+      <div align='center'>
+        <%= image_tag("arrow_left.png") %>
+      </div>  
 </div>
 </div>
 <div class='row'>
@@ -46,20 +52,22 @@
     <h2>All about exercises</h2>
     <br />
     <blockquote>
-      <p>Challenges are overcome by taking on the problem one small step at a time. Similarly, good habits are created through small individual actions, which evolve into unconscious practices.</p>
+      <p>We then give you daily activities to do, which will ultimately lead to the development of the habit you desire. On the right are a few example activities. Easy right? So why not get started today?</p>
     </blockquote>
     <br />
-    <%= button_to 'Receive Exercises', contact_path, :class => 'btn btn-large btn-success', :style => 'margin-padding:20px', :method => :get %>  
+    <div align='center'>
+      <%= image_tag("arrow_right.png") %>  
+    </div>   
   </div>
   <div class='span6'>
     <div class='well'>
-      <p style='margin-left: 15px'>"Ask a shop assistant for advice on what to wear for someone like me" - Confidence building</p>
+      <p style='margin-left: 15px'>"After brushing tonight, just floss one tooth.<br />Any one, but just one." - Flossing daily</p>
     </div>
     <div class='well'>
-      <p style='margin-left: 15px'>"Find a location nearby your appointment and aim to arrive there 45 mins beforehand and read a newspaper while waiting" - Punctuality</p>
+      <p style='margin-left: 15px'>"As soon as you arrive home tonight, put on<br />your running shoes. You don't have to go anywhere. Just put them on." - Regular exercise</p>
     </div>
     <div class='well'>
-      <p style='margin-left: 15px'>"Purchase a small bag of almonds to snack on today in between meals" - Healthy eating</p>
+      <p style='margin-left: 15px'>"After you get into bed tonight, white three<br />words in your journal." - Increased writing</p>
     </div>
   </div>
 </div>  
@@ -67,7 +75,7 @@
   <div class='span12'>
     <hr>
     <div align='center'>  
-      <%= button_to 'Pricing & Sign Up', contact_path, :class => 'btn btn-large btn-info span5', :style => 'margin-padding:20px', :method => :get %>  
+      <%= render :partial => 'users/form' %> 
     </div>
     <hr>
   </div>  

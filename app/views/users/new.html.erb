@@ -4,25 +4,8 @@
   <br />
   <div class='hero-unit'>
     
-    <%= form_for @user do |f| %>
-      <% if @user.errors.any? %>
-        <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      <% end %>
-      
-      <div class='form-inline' align='center'>  
-        <%= f.text_field :name, :placeholder => "Name", :class => 'span3', :id => 'textboxid', :style => 'margin-top: 2px' %>&nbsp;
-        
-        <%= f.text_field :email, :placeholder => "Email", :class => 'span3', :id => 'textboxid', :style => 'margin-top: 2px' %>&nbsp;
-        
-        <%= f.text_field :phone, :placeholder => "Phone", :class => 'span3', :id => 'textboxid', :style => 'margin-top: 2px' %>&nbsp;
-        
-        <%= f.submit :class => 'btn btn-large btn-info' %>
-      </div>  
-    <% end %>
+    <%= render :partial => 'form' %>
+    
   </div>
 
 <br />
