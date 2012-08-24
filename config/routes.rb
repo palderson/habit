@@ -1,4 +1,8 @@
 Chan::Application.routes.draw do
+  resources :users
+  resource  :verifications
+  root to: 'users#new'
+  
   resources :pages
 
   # The priority is based upon order of creation:
@@ -50,7 +54,6 @@ Chan::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'pages#index'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
